@@ -3,7 +3,7 @@ library(ggplot2)
 library(plotly)
 
 
-results <- tibble(
+results <- data.frame(
   game_number = 1:22,
   location = c("A", "A", "H", "A", "H", "A", "H", "A", "H", "H", "A", "H", "H", "A", "H", "A", "A", "H", "H", "A", "H", "A"), 
   result = c(rep("L", 5),"D", rep("W", 4), "D", "W", "W", "L", "W", "W", "W", "L", "W", "W", "W", "W"),
@@ -56,12 +56,11 @@ plot_pts <- results %>%
     aes(label = details),
     size = 4,
     angle = 90,
-    hjust = c(rep(-0.1, 17), rep(1.1, 5))
+    hjust = c(rep(-0.1, 19), rep(1.1, 3))
   ) +
   labs(
-    y = "Cumulative points",
     title = "WH&EHC Men's 1st XI",
-    subtitle = "Cumulative points (league 4SW, season 2017/18)"
+    subtitle = "Cumulative points (third place, league 4SW, season 2017/18)"
   ) +
   scale_y_continuous(breaks = unique(results$points_total)) + 
   theme_classic() +
@@ -77,4 +76,4 @@ plot_pts <- results %>%
 
 plot_pts
 
-ggplotly(plot_pts)
+# ggplotly(plot_pts)
