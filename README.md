@@ -1,7 +1,9 @@
 # whe-hockey
 
-Winchmore Hill & Enfield Hockey Club: [web](http://www.whehockey.com/), [Twitter](https://twitter.com/WHandEHockey).
+## Purpose
 
-JOIN US.
+This is a folder for collecting and preparing data for Winchmore Hill & Enfield Hockey Club's men's first team.
 
-![Results 2017/18](https://github.com/matt-dray/whe-hockey/blob/master/whe-m1-results-201718.png)
+You can find the club on the [website](http://www.whehockey.com/) and on [Twitter](https://twitter.com/WHandEHockey).
+
+The official source for results, fixtures and tables is [the East Men's Hockey League website](http://www.east-hockey.com/leagues2/showdata/sqlresults/EMLlatest.htm).
