@@ -12,7 +12,7 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 library(plotly)
-library(flexdashboard)
+library(emo)
 source("plot_pts.R")
 ```
 
@@ -21,19 +21,25 @@ Column {data-width=200}
     
 ### About
 
-#### The club
+#### `r emo::ji("purple_heart")` The club
 
-[Winchmore Hill & Enfield](http://www.whehockey.com/) are a hockey club based in North London.
+[Winchmore Hill & Enfield](http://www.whehockey.com/) is a hockey club based in North London.
 
 The men's first XI play in [East Hockey League Division 4SW](http://www.east-hockey.com/leagues2/showdata/sqlresults/resultsmen.asp?division=4SW).
 
-#### Plots
+#### `r emo::ji("chart_with_upwards_trend")` Plots
 
 The plots show the cumulative number of points collected over the course of the season.
 
 Different seasons are available in separate tabs.
 
 Hover over the points for details on the match.
+
+#### `r emo::ji("computer")` Tech details
+
+* Built in R
+* Packages: flexdashboard, readr, dplyr, ggplot2, plotly
+* [GitHub repo](https://github.com/matt-dray/whe-hockey)
  
 Column {.tabset}
 -------------------------------------
