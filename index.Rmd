@@ -1,0 +1,54 @@
+---
+title: "Winchmore Hill & Enfield Hockey Club Men's First XI"
+author: "Matt Dray"
+output:
+  flexdashboard::flex_dashboard:
+    theme: lumen
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(flexdashboard)
+source("plot_pts.R")
+```
+
+Column {data-width=200}
+-------------------------------------
+    
+### About
+
+#### The club
+
+[Winchmore Hill & Enfield](http://www.whehockey.com/) are a hockey club based in North London.
+
+The men's first XI play in [East Hockey League Division 4SW](http://www.east-hockey.com/leagues2/showdata/sqlresults/resultsmen.asp?division=4SW).
+
+#### Plots
+
+The plots show the cumulative number of points collected over the course of the season.
+
+Different seasons are available in separate tabs.
+
+Hover over the points for details on the match.
+ 
+Column {.tabset}
+-------------------------------------
+
+### Season 2018/19
+
+```{r}
+plot_pts(file_path = "data/whe-m1-results-201819.csv") %>% 
+  ggplotly()
+```
+
+### Season 2017/18
+
+```{r}
+plot_pts(  file_path = "data/whe-m1-results-201718.csv") %>% 
+  ggplotly()
+```   
+ 
