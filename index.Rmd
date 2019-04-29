@@ -54,7 +54,7 @@ plot_pts(file_path = "data/whe-m1-results-201819.csv") %>%
 ### Season 2017/18
 
 ```{r}
-plot_pts(  file_path = "data/whe-m1-results-201718.csv") %>% 
+plot_pts(file_path = "data/whe-m1-results-201718.csv") %>% 
   ggplotly()
 ```   
  

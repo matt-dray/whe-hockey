@@ -2,7 +2,7 @@ plot_pts <- function(file_path, season) {
   
   # Prepare data
   
-  results <- read_csv(file_path) %>% 
+  whehc_results <- read_csv(file_path) %>% 
     mutate(
       details = paste0(opponent, " (", location, ") ", result, " ", goals_for, "-",  goals_against),
       result = case_when(
@@ -14,7 +14,7 @@ plot_pts <- function(file_path, season) {
   
   # Generate plot
   
-  plot <- results %>% 
+  whehc_plot <- whehc_results %>% 
     ggplot(aes(x = game_number, y = points_total, label = details)) +
     geom_line(colour = "lightgrey") +
     geom_point(
@@ -28,7 +28,7 @@ plot_pts <- function(file_path, season) {
     #   hjust = c(rep(-0.1, 19), rep(1.1, 3))
     # ) +
     # labs(title = "Season information goes here") +
-    scale_y_continuous(breaks = unique(results$points_total)) + 
+    scale_y_continuous(breaks = unique(whehc_results$points_total)) + 
     theme_classic() +
     theme(
       axis.line = element_blank(),
@@ -40,6 +40,6 @@ plot_pts <- function(file_path, season) {
     ) +
     scale_colour_brewer("Purples")
   
-  return(plot)
+  return(whehc_plot)
   
 }
