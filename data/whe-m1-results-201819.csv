@@ -1,6 +1,6 @@
 game_number,date,opponent,location,result,goals_for,goals_against,points_game,points_total,motm,dotd
 1,2018-09-22,Broxbourne III,H,L,2,3,0,0,CF7,MD19
-2,2018-09-29,Potters Bar II,A,L,7,0,0,0,HF42,MD19
+2,2018-09-29,Potters Bar II,A,L,0,7,0,0,HF42,MD19
 3,2018-10-06,Bishops Stortford II,A,L,4,5,0,0,EO30,JG15
 4,2018-10-13,Vauxhall I,H,W,5,4,3,3,CJ26,JR1
 5,2018-10-20,St Albans V,A,W,3,1,3,6,NS13,TM10
@@ -18,6 +18,6 @@ game_number,date,opponent,location,result,goals_for,goals_against,points_game,po
 17,2019-02-09,Harpenden II,A,L,2,3,0,23,SK22,JS61
 18,2019-03-16,Blueharts IV,H,W,4,3,3,26,CF7,JS61
 19,2019-03-02,Berkhamsted II,A,L,1,2,0,26,MD2,JL27
-20,2019-03-09,Shefford and Sandy II,H,W,2,1,3,29,NA,NA
-21,2019-03-16,St Albans IV,A,NA,NA,NA,NA,NA,NA,NA
-22,2019-03-23,Hertford II,H,NA,NA,NA,NA,NA,NA,NA
+20,2019-03-09,Shefford and Sandy II,H,W,2,1,3,29,NS1,SC35
+21,2019-03-16,St Albans IV,A,L,0,7,0,29,SC35,GW
+22,2019-03-23,Hertford II,H,L,1,2,0,29,NA,NA
